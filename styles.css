@@ -1,0 +1,80 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    font-family: monospace, sans-serif;
+}
+
+button {
+    font-size: 18px;
+    cursor: pointer;
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.container {
+    background-image: url(./img/fondo4.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding-top: 20px;
+}
+
+.image {
+    height: 200px;
+}
+
+.message {
+    text-align: center;
+}
+
+.question {
+    padding: 10px 0;
+    font-size: 30px;
+    font-weight: 600;
+    text-shadow: 3px 3px 5px #FFF;
+}
+
+.yesBtn {
+    padding: 5px 10px;
+    background-color: #008000;
+    border: none !important;
+}
+
+.noBtn {
+    padding: 5px 10px;
+    background-color: #ff0000;
+    margin-top: 10px;
+    border: none !important;
+}
+
+.messageContainer {
+    font-size: 30px;
+    font-weight: 600;
+    color: #000;
+    font-family: monospace, sans-serif;
+    text-shadow: 2px 2px 4px #FFF;
+    animation: pulse 0.5s infinite alternate;
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.3);
+        /* Zoom más grande */
+    }
+}
